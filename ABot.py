@@ -21,13 +21,17 @@ def from_str_to_bool(st):
         return
 
 
+def decod(token):
+    return token[::-1]
+
+
 class Bot(commands.Bot):
     def __init__(self):
         self.prefix = 'b'
         self.name = 'ABot'
         self.config = Config()
         self.debug = self.config.getConfigVar('debug')
-        self.token = self.config.getConfigVar('token')
+        self.token = decod(self.config.getConfigVar('token'))
         super().__init__(command_prefix=f"{self.prefix} ", pm_help=False)
 
         self.msg_calc_module = self.config.getConfigVar('msg_calc_module')
