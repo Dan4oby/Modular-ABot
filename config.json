@@ -1,0 +1,8 @@
+{"debug": true,
+"token": "ov8hfIBLU5uI9POOK9upN3SqtnH.A1-lrX.zQjM3QDM4UTO0kDO5MDM3kjN",
+"msg_calc_module": true,
+"expression_limit": 30,
+"link_banner_module": true,
+"links_blacklist": ["youtube.com",
+"youtu.be"],
+"image_module": true}
